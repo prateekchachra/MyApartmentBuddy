@@ -105,8 +105,7 @@
 			children = (
 				8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */,
 				8468F1362AE8FD8300383BDF /* ContentView.swift */,
-				8468F15F2AE8FEB400383BDF /* MainView.swift */,
-				8468F1612AE918CC00383BDF /* TabBarButtonView.swift */,
+				848E29082AEB9F780001E2DE /* MainTabBar */,
 				8468F1382AE8FD8400383BDF /* Assets.xcassets */,
 				8468F13A2AE8FD8400383BDF /* MyApartmentBuddy.entitlements */,
 				8468F13B2AE8FD8400383BDF /* Preview Content */,
@@ -139,6 +138,15 @@
 				8468F1522AE8FD8400383BDF /* MyApartmentBuddyUITestsLaunchTests.swift */,
 			);
 			path = MyApartmentBuddyUITests;
+			sourceTree = "<group>";
+		};
+		848E29082AEB9F780001E2DE /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8468F1612AE918CC00383BDF /* TabBarButtonView.swift */,
+				8468F15F2AE8FEB400383BDF /* MainView.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
