@@ -13,32 +13,33 @@ struct MainView: View {
     
     func correctViewForState() -> some View {
         switch appState.selectedTab {
-            case .badminton:
-                let view = Text("Badminton")
-                return Text("Badminton")
-            
-            case .profile:
-                return Text("Profile")
-            
-            case .tennis:
-                return Text("Tennis")
-            
-            case .cricket:
-                return Text("Cricket")
-            
-            case .soccer:
-                return Text("Soccer")
-            case .othersports:
-                return Text("Other Sports")
-            }
+        case .badminton:
+            let view = Text("Badminton")
+            return AnyView(view)
+        case .tennis:
+            let view = Text("Tennis")
+            return AnyView(view)
+        case .cricket:
+            let view = Text("Cricket")
+            return AnyView(view)
+        case .soccer:
+            let view = Text("Soccer")
+            return AnyView(view)
+        case .othersports:
+            let view = Text("Other Sports")
+            return AnyView(view)
+        case .profile:
+            let view = ProfileView()
+            return AnyView(view)
+        }
+        
     }
     
     var body: some View {
         ZStack {
-            Color(.systemGray)
+            Color(.systemGray6)
                 .opacity(0.35)
                 .edgesIgnoringSafeArea(.vertical)
-        
             VStack {
                 HStack{
                     Spacer()

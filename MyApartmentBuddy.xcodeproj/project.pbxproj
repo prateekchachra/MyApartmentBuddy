@@ -16,8 +16,19 @@
 		8468F1532AE8FD8400383BDF /* MyApartmentBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1522AE8FD8400383BDF /* MyApartmentBuddyUITestsLaunchTests.swift */; };
 		8468F1602AE8FEB400383BDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F15F2AE8FEB400383BDF /* MainView.swift */; };
 		8468F1622AE918CC00383BDF /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1612AE918CC00383BDF /* TabBarButtonView.swift */; };
+		848616A22AEE3D0E00C7EA80 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A12AEE3D0E00C7EA80 /* Message.swift */; };
+		848616A52AEE3DB600C7EA80 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A42AEE3DB600C7EA80 /* Person.swift */; };
+		848616A82AEE3E8800C7EA80 /* MessageThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A72AEE3E8800C7EA80 /* MessageThread.swift */; };
+		848616AB2AEE409900C7EA80 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616AA2AEE409900C7EA80 /* MessageView.swift */; };
+		848616AD2AEE44B400C7EA80 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616AC2AEE44B400C7EA80 /* ChatView.swift */; };
+		848616AF2AEE44F400C7EA80 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616AE2AEE44F400C7EA80 /* ChatManager.swift */; };
+		848616B12AEE478900C7EA80 /* ChatViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616B02AEE478900C7EA80 /* ChatViewHeader.swift */; };
+		848E290A2AEC29180001E2DE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E29092AEC29180001E2DE /* ProfileView.swift */; };
+		848E290D2AEC2AE00001E2DE /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E290C2AEC2AE00001E2DE /* RoundedImage.swift */; };
+		848E29102AEC30380001E2DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 848E290F2AEC30380001E2DE /* Kingfisher */; };
 		84B63ADC2AEA41D9000D31D4 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B63ADB2AEA41D9000D31D4 /* AppStateManager.swift */; };
 		84B63ADE2AEA45B4000D31D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B63ADD2AEA45B4000D31D4 /* Extensions.swift */; };
+		84EDA9A32AED55C7000B3A8E /* ProfileSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EDA9A22AED55C7000B3A8E /* ProfileSwipePromo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +62,18 @@
 		8468F1522AE8FD8400383BDF /* MyApartmentBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApartmentBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8468F15F2AE8FEB400383BDF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8468F1612AE918CC00383BDF /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
+		848616A12AEE3D0E00C7EA80 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		848616A42AEE3DB600C7EA80 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		848616A72AEE3E8800C7EA80 /* MessageThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThread.swift; sourceTree = "<group>"; };
+		848616AA2AEE409900C7EA80 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		848616AC2AEE44B400C7EA80 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		848616AE2AEE44F400C7EA80 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		848616B02AEE478900C7EA80 /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
+		848E29092AEC29180001E2DE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		848E290C2AEC2AE00001E2DE /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		84B63ADB2AEA41D9000D31D4 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		84B63ADD2AEA45B4000D31D4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84EDA9A22AED55C7000B3A8E /* ProfileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSwipePromo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848E29102AEC30380001E2DE /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,14 +125,19 @@
 		8468F1332AE8FD8300383BDF /* MyApartmentBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				848616A92AEE408900C7EA80 /* Messages */,
+				848616A32AEE3D1900C7EA80 /* Model */,
+				848E290B2AEC29240001E2DE /* Profile */,
 				8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */,
 				8468F1362AE8FD8300383BDF /* ContentView.swift */,
+				8468F1612AE918CC00383BDF /* TabBarButtonView.swift */,
 				848E29082AEB9F780001E2DE /* MainTabBar */,
 				8468F1382AE8FD8400383BDF /* Assets.xcassets */,
 				8468F13A2AE8FD8400383BDF /* MyApartmentBuddy.entitlements */,
 				8468F13B2AE8FD8400383BDF /* Preview Content */,
 				84B63ADB2AEA41D9000D31D4 /* AppStateManager.swift */,
 				84B63ADD2AEA45B4000D31D4 /* Extensions.swift */,
+				848E29112AEC3C320001E2DE /* HelperView */,
 			);
 			path = MyApartmentBuddy;
 			sourceTree = "<group>";
@@ -140,13 +167,50 @@
 			path = MyApartmentBuddyUITests;
 			sourceTree = "<group>";
 		};
+		848616A32AEE3D1900C7EA80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				848616A12AEE3D0E00C7EA80 /* Message.swift */,
+				848616A42AEE3DB600C7EA80 /* Person.swift */,
+				848616A72AEE3E8800C7EA80 /* MessageThread.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848616A92AEE408900C7EA80 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				848616AA2AEE409900C7EA80 /* MessageView.swift */,
+				848616AC2AEE44B400C7EA80 /* ChatView.swift */,
+				848616AE2AEE44F400C7EA80 /* ChatManager.swift */,
+				848616B02AEE478900C7EA80 /* ChatViewHeader.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
 		848E29082AEB9F780001E2DE /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				8468F1612AE918CC00383BDF /* TabBarButtonView.swift */,
 				8468F15F2AE8FEB400383BDF /* MainView.swift */,
 			);
 			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		848E290B2AEC29240001E2DE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				848E29092AEC29180001E2DE /* ProfileView.swift */,
+				84EDA9A22AED55C7000B3A8E /* ProfileSwipePromo.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		848E29112AEC3C320001E2DE /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				848E290C2AEC2AE00001E2DE /* RoundedImage.swift */,
+			);
+			path = HelperView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +229,9 @@
 			dependencies = (
 			);
 			name = MyApartmentBuddy;
+			packageProductDependencies = (
+				848E290F2AEC30380001E2DE /* Kingfisher */,
+			);
 			productName = MyApartmentBuddy;
 			productReference = 8468F1312AE8FD8300383BDF /* MyApartmentBuddy.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +304,9 @@
 				Base,
 			);
 			mainGroup = 8468F1282AE8FD8300383BDF;
+			packageReferences = (
+				848E290E2AEC30380001E2DE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8468F1322AE8FD8300383BDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,12 +349,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848616AF2AEE44F400C7EA80 /* ChatManager.swift in Sources */,
 				8468F1622AE918CC00383BDF /* TabBarButtonView.swift in Sources */,
+				848E290D2AEC2AE00001E2DE /* RoundedImage.swift in Sources */,
+				848616B12AEE478900C7EA80 /* ChatViewHeader.swift in Sources */,
 				84B63ADE2AEA45B4000D31D4 /* Extensions.swift in Sources */,
 				8468F1372AE8FD8300383BDF /* ContentView.swift in Sources */,
+				848616AD2AEE44B400C7EA80 /* ChatView.swift in Sources */,
+				848616A52AEE3DB600C7EA80 /* Person.swift in Sources */,
+				848616AB2AEE409900C7EA80 /* MessageView.swift in Sources */,
+				84EDA9A32AED55C7000B3A8E /* ProfileSwipePromo.swift in Sources */,
 				8468F1602AE8FEB400383BDF /* MainView.swift in Sources */,
 				8468F1352AE8FD8300383BDF /* MyApartmentBuddyApp.swift in Sources */,
+				848616A22AEE3D0E00C7EA80 /* Message.swift in Sources */,
+				848E290A2AEC29180001E2DE /* ProfileView.swift in Sources */,
 				84B63ADC2AEA41D9000D31D4 /* AppStateManager.swift in Sources */,
+				848616A82AEE3E8800C7EA80 /* MessageThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +708,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		848E290E2AEC30380001E2DE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		848E290F2AEC30380001E2DE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848E290E2AEC30380001E2DE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8468F1292AE8FD8300383BDF /* Project object */;
 }
