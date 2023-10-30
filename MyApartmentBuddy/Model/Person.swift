@@ -9,7 +9,7 @@ import Foundation
 
 
 
-struct Person {
+struct Person: Hashable{
     var name: String;
     var imageURLs: [URL]
 }

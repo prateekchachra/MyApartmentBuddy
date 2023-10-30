@@ -10,6 +10,7 @@ import SwiftUI
 struct ChatView: View {
     @ObservedObject var chatMng : ChatManager
     @State private var typingMessage: String = ""
+    @State private var scrollProxy: ScrollViewProxy? = nil
     
     private var group: [Person]
     init(group: [Person]) {
@@ -21,13 +22,17 @@ struct ChatView: View {
             VStack {
                 Spacer().frame(height: 64)
                 ScrollView(.vertical, showsIndicators: false, content: {
-                    LazyVStack {
-                        ForEach(chatMng.messages.indices, id: \.self) { index in
-                            let msg = chatMng.messages[index]
-                            MessageView(message: msg)
-                                .animation(.easeIn)
-                                .transition(.move(edge: .trailing))
-                        }
+                    ScrollViewReader { proxy in
+                        
+                        LazyVStack {
+                            ForEach(chatMng.messages.indices, id: \.self) { index in
+                                let msg = chatMng.messages[index]
+                                MessageView(message: msg)
+                                    .animation(.easeIn)
+                                    .transition(.move(edge: .trailing))
+                                    .id(index)
+                            }
+                        }.onAppear(perform : {scrollProxy = proxy})
                     }
                     
                 })
@@ -63,11 +68,25 @@ struct ChatView: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+        .onChange(of: chatMng.keyboardIsShowing , perform: { value in
+            if value {
+                scrollToBottom()
+            }
+        })
+        .onChange(of: chatMng.messages, perform: {_ in
+            scrollToBottom()
+        })
     }
     
     func sendMessage() {
         chatMng.sendMessage(Message(content: typingMessage))
         typingMessage = ""
+    }
+    
+    func scrollToBottom () {
+        withAnimation{
+            scrollProxy?.scrollTo(chatMng.messages.count - 1, anchor: .bottom)
+        }
     }
 }
 

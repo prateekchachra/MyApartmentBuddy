@@ -6,10 +6,14 @@
 //
 
 import Foundation
-
+import Combine
+import UIKit
 
 class ChatManager: ObservableObject {
     @Published var messages = [Message.exampleSent, Message.exampleReceived]
+    @Published var keyboardIsShowing : Bool = false
+    var cancellable : AnyCancellable? = nil
+    
     private var group: [Person]
     
     init(
@@ -17,6 +21,7 @@ class ChatManager: ObservableObject {
     ) {
         self.group = group
         loadMessages()
+        setupPublishers()
     }
     private func loadMessages () {
         messages = [Message.exampleSent, Message.exampleReceived]
@@ -27,4 +32,23 @@ class ChatManager: ObservableObject {
         messages.append(message)
         // if network failure show error with retry options
     }
+    
+    private let keyboardWillShow = NotificationCenter.default
+        .publisher(for: UIResponder.keyboardWillShowNotification)
+        .map({_ in true})
+    
+    private let keyboardWillHide = NotificationCenter.default
+        .publisher(for: UIResponder.keyboardWillHideNotification)
+        .map({_ in false})
+    
+    private func setupPublishers(){
+        cancellable = Publishers.Merge(keyboardWillShow, keyboardWillHide)
+            .subscribe(on: DispatchQueue.main)
+            .assign(to: \.keyboardIsShowing, on: self)
+    }
+    
+    deinit {
+        cancellable?.cancel()
+    }
+    
 }
