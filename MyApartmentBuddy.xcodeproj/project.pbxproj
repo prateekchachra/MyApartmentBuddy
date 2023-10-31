@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845C01572AF104D30099DD80 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C01562AF104D30099DD80 /* MessageListView.swift */; };
+		845C015B2AF105340099DD80 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C015A2AF105340099DD80 /* MessageListVM.swift */; };
 		8468F1352AE8FD8300383BDF /* MyApartmentBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */; };
 		8468F1372AE8FD8300383BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1362AE8FD8300383BDF /* ContentView.swift */; };
 		8468F1392AE8FD8400383BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8468F1382AE8FD8400383BDF /* Assets.xcassets */; };
@@ -18,7 +20,7 @@
 		8468F1622AE918CC00383BDF /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1612AE918CC00383BDF /* TabBarButtonView.swift */; };
 		848616A22AEE3D0E00C7EA80 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A12AEE3D0E00C7EA80 /* Message.swift */; };
 		848616A52AEE3DB600C7EA80 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A42AEE3DB600C7EA80 /* Person.swift */; };
-		848616A82AEE3E8800C7EA80 /* MessageThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A72AEE3E8800C7EA80 /* MessageThread.swift */; };
+		848616A82AEE3E8800C7EA80 /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616A72AEE3E8800C7EA80 /* MessagePreview.swift */; };
 		848616AB2AEE409900C7EA80 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616AA2AEE409900C7EA80 /* MessageView.swift */; };
 		848616AD2AEE44B400C7EA80 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616AC2AEE44B400C7EA80 /* ChatView.swift */; };
 		848616AF2AEE44F400C7EA80 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848616AE2AEE44F400C7EA80 /* ChatManager.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		845C01562AF104D30099DD80 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		845C015A2AF105340099DD80 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		8468F1312AE8FD8300383BDF /* MyApartmentBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApartmentBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApartmentBuddyApp.swift; sourceTree = "<group>"; };
 		8468F1362AE8FD8300383BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +68,7 @@
 		8468F1612AE918CC00383BDF /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 		848616A12AEE3D0E00C7EA80 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		848616A42AEE3DB600C7EA80 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		848616A72AEE3E8800C7EA80 /* MessageThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThread.swift; sourceTree = "<group>"; };
+		848616A72AEE3E8800C7EA80 /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
 		848616AA2AEE409900C7EA80 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		848616AC2AEE44B400C7EA80 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		848616AE2AEE44F400C7EA80 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
@@ -172,7 +176,7 @@
 			children = (
 				848616A12AEE3D0E00C7EA80 /* Message.swift */,
 				848616A42AEE3DB600C7EA80 /* Person.swift */,
-				848616A72AEE3E8800C7EA80 /* MessageThread.swift */,
+				848616A72AEE3E8800C7EA80 /* MessagePreview.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +188,8 @@
 				848616AC2AEE44B400C7EA80 /* ChatView.swift */,
 				848616AE2AEE44F400C7EA80 /* ChatManager.swift */,
 				848616B02AEE478900C7EA80 /* ChatViewHeader.swift */,
+				845C01562AF104D30099DD80 /* MessageListView.swift */,
+				845C015A2AF105340099DD80 /* MessageListVM.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -350,10 +356,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				848616AF2AEE44F400C7EA80 /* ChatManager.swift in Sources */,
+				845C01572AF104D30099DD80 /* MessageListView.swift in Sources */,
 				8468F1622AE918CC00383BDF /* TabBarButtonView.swift in Sources */,
 				848E290D2AEC2AE00001E2DE /* RoundedImage.swift in Sources */,
 				848616B12AEE478900C7EA80 /* ChatViewHeader.swift in Sources */,
 				84B63ADE2AEA45B4000D31D4 /* Extensions.swift in Sources */,
+				845C015B2AF105340099DD80 /* MessageListVM.swift in Sources */,
 				8468F1372AE8FD8300383BDF /* ContentView.swift in Sources */,
 				848616AD2AEE44B400C7EA80 /* ChatView.swift in Sources */,
 				848616A52AEE3DB600C7EA80 /* Person.swift in Sources */,
@@ -364,7 +372,7 @@
 				848616A22AEE3D0E00C7EA80 /* Message.swift in Sources */,
 				848E290A2AEC29180001E2DE /* ProfileView.swift in Sources */,
 				84B63ADC2AEA41D9000D31D4 /* AppStateManager.swift in Sources */,
-				848616A82AEE3E8800C7EA80 /* MessageThread.swift in Sources */,
+				848616A82AEE3E8800C7EA80 /* MessagePreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

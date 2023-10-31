@@ -28,5 +28,10 @@ extension Color {
     static let textTitle = Color.black.opacity(0.8)
     static let defaultBackground = Color(.systemGray6).opacity(0.35)
     static let textFieldBackground = Color(.systemGray6)
-    
+}
+
+extension View {
+    func endEditing(_ force : Bool){
+        UIApplication.shared.windows.forEach{$0.endEditing(force)}
+    }
 }
