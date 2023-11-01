@@ -26,7 +26,7 @@ struct MainView: View {
             let view = Text("Soccer")
             return AnyView(view)
         case .othersports:
-            let view = Text("Other Sports")
+            let view = MessageListView()
             return AnyView(view)
         case .profile:
             let view = ProfileView()
@@ -36,26 +36,29 @@ struct MainView: View {
     }
     
     var body: some View {
-        ZStack {
-            Color(.systemGray6)
-                .opacity(0.35)
-                .edgesIgnoringSafeArea(.vertical)
-            VStack {
-                HStack{
+        NavigationView {
+            ZStack {
+                Color(.systemGray6)
+                    .opacity(0.35)
+                    .edgesIgnoringSafeArea(.vertical)
+                VStack {
+                    HStack{
+                        Spacer()
+                        TabBarButtonView(type: .badminton)
+                        TabBarButtonView(type: .tennis)
+                        TabBarButtonView(type: .cricket)
+                        TabBarButtonView(type: .soccer)
+                        TabBarButtonView(type: .othersports)
+                        TabBarButtonView(type: .profile)
+                    }.frame(height: 100)
+                        .padding(.top, 30)
+                    correctViewForState()
                     Spacer()
-                    TabBarButtonView(type: .badminton)
-                    TabBarButtonView(type: .tennis)
-                    TabBarButtonView(type: .cricket)
-                    TabBarButtonView(type: .soccer)
-                    TabBarButtonView(type: .othersports)
-                    TabBarButtonView(type: .profile)
-                }.frame(height: 100)
-                    .padding(.top, 30)
-                correctViewForState()
-                Spacer()
+                }
+                .edgesIgnoringSafeArea(.vertical)
             }
-            .edgesIgnoringSafeArea(.vertical)
         }
+        .modifier(HideNavigationView())
     }
 }
 

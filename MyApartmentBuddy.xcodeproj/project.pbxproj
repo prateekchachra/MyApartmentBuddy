@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844323752AF266F5005567F2 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844323742AF266F5005567F2 /* MessageRowView.swift */; };
 		845C01572AF104D30099DD80 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C01562AF104D30099DD80 /* MessageListView.swift */; };
 		845C015B2AF105340099DD80 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C015A2AF105340099DD80 /* MessageListVM.swift */; };
 		8468F1352AE8FD8300383BDF /* MyApartmentBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844323742AF266F5005567F2 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		845C01562AF104D30099DD80 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		845C015A2AF105340099DD80 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		8468F1312AE8FD8300383BDF /* MyApartmentBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApartmentBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +136,6 @@
 				848E290B2AEC29240001E2DE /* Profile */,
 				8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */,
 				8468F1362AE8FD8300383BDF /* ContentView.swift */,
-				8468F1612AE918CC00383BDF /* TabBarButtonView.swift */,
 				848E29082AEB9F780001E2DE /* MainTabBar */,
 				8468F1382AE8FD8400383BDF /* Assets.xcassets */,
 				8468F13A2AE8FD8400383BDF /* MyApartmentBuddy.entitlements */,
@@ -190,6 +191,7 @@
 				848616B02AEE478900C7EA80 /* ChatViewHeader.swift */,
 				845C01562AF104D30099DD80 /* MessageListView.swift */,
 				845C015A2AF105340099DD80 /* MessageListVM.swift */,
+				844323742AF266F5005567F2 /* MessageRowView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -197,6 +199,7 @@
 		848E29082AEB9F780001E2DE /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8468F1612AE918CC00383BDF /* TabBarButtonView.swift */,
 				8468F15F2AE8FEB400383BDF /* MainView.swift */,
 			);
 			path = MainTabBar;
@@ -360,6 +363,7 @@
 				8468F1622AE918CC00383BDF /* TabBarButtonView.swift in Sources */,
 				848E290D2AEC2AE00001E2DE /* RoundedImage.swift in Sources */,
 				848616B12AEE478900C7EA80 /* ChatViewHeader.swift in Sources */,
+				844323752AF266F5005567F2 /* MessageRowView.swift in Sources */,
 				84B63ADE2AEA45B4000D31D4 /* Extensions.swift in Sources */,
 				845C015B2AF105340099DD80 /* MessageListVM.swift in Sources */,
 				8468F1372AE8FD8300383BDF /* ContentView.swift in Sources */,
