@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		844323752AF266F5005567F2 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844323742AF266F5005567F2 /* MessageRowView.swift */; };
+		845A91B52AF39BD50064C4C9 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A91B42AF39BD50064C4C9 /* UserManager.swift */; };
+		845A91B72AF39C2E0064C4C9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A91B62AF39C2E0064C4C9 /* User.swift */; };
+		845A91B92AF39E760064C4C9 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A91B82AF39E760064C4C9 /* LikesView.swift */; };
 		845C01572AF104D30099DD80 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C01562AF104D30099DD80 /* MessageListView.swift */; };
 		845C015B2AF105340099DD80 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C015A2AF105340099DD80 /* MessageListVM.swift */; };
 		8468F1352AE8FD8300383BDF /* MyApartmentBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F1342AE8FD8300383BDF /* MyApartmentBuddyApp.swift */; };
@@ -29,6 +32,7 @@
 		848E290A2AEC29180001E2DE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E29092AEC29180001E2DE /* ProfileView.swift */; };
 		848E290D2AEC2AE00001E2DE /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E290C2AEC2AE00001E2DE /* RoundedImage.swift */; };
 		848E29102AEC30380001E2DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 848E290F2AEC30380001E2DE /* Kingfisher */; };
+		849E26872AF4D35500BF6DA1 /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E26862AF4D35500BF6DA1 /* PersonSquare.swift */; };
 		84B63ADC2AEA41D9000D31D4 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B63ADB2AEA41D9000D31D4 /* AppStateManager.swift */; };
 		84B63ADE2AEA45B4000D31D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B63ADD2AEA45B4000D31D4 /* Extensions.swift */; };
 		84EDA9A32AED55C7000B3A8E /* ProfileSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EDA9A22AED55C7000B3A8E /* ProfileSwipePromo.swift */; };
@@ -53,6 +57,9 @@
 
 /* Begin PBXFileReference section */
 		844323742AF266F5005567F2 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		845A91B42AF39BD50064C4C9 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		845A91B62AF39C2E0064C4C9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		845A91B82AF39E760064C4C9 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		845C01562AF104D30099DD80 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		845C015A2AF105340099DD80 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		8468F1312AE8FD8300383BDF /* MyApartmentBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApartmentBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +84,7 @@
 		848616B02AEE478900C7EA80 /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
 		848E29092AEC29180001E2DE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		848E290C2AEC2AE00001E2DE /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		849E26862AF4D35500BF6DA1 /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
 		84B63ADB2AEA41D9000D31D4 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		84B63ADD2AEA45B4000D31D4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		84EDA9A22AED55C7000B3A8E /* ProfileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSwipePromo.swift; sourceTree = "<group>"; };
@@ -108,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845A91BA2AF39E7D0064C4C9 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				845A91B82AF39E760064C4C9 /* LikesView.swift */,
+				849E26862AF4D35500BF6DA1 /* PersonSquare.swift */,
+			);
+			name = Matches;
+			sourceTree = "<group>";
+		};
 		8468F1282AE8FD8300383BDF = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +160,8 @@
 				84B63ADB2AEA41D9000D31D4 /* AppStateManager.swift */,
 				84B63ADD2AEA45B4000D31D4 /* Extensions.swift */,
 				848E29112AEC3C320001E2DE /* HelperView */,
+				845A91B42AF39BD50064C4C9 /* UserManager.swift */,
+				845A91BA2AF39E7D0064C4C9 /* Matches */,
 			);
 			path = MyApartmentBuddy;
 			sourceTree = "<group>";
@@ -178,6 +197,7 @@
 				848616A12AEE3D0E00C7EA80 /* Message.swift */,
 				848616A42AEE3DB600C7EA80 /* Person.swift */,
 				848616A72AEE3E8800C7EA80 /* MessagePreview.swift */,
+				845A91B62AF39C2E0064C4C9 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +381,7 @@
 				848616AF2AEE44F400C7EA80 /* ChatManager.swift in Sources */,
 				845C01572AF104D30099DD80 /* MessageListView.swift in Sources */,
 				8468F1622AE918CC00383BDF /* TabBarButtonView.swift in Sources */,
+				849E26872AF4D35500BF6DA1 /* PersonSquare.swift in Sources */,
 				848E290D2AEC2AE00001E2DE /* RoundedImage.swift in Sources */,
 				848616B12AEE478900C7EA80 /* ChatViewHeader.swift in Sources */,
 				844323752AF266F5005567F2 /* MessageRowView.swift in Sources */,
@@ -375,8 +396,11 @@
 				8468F1352AE8FD8300383BDF /* MyApartmentBuddyApp.swift in Sources */,
 				848616A22AEE3D0E00C7EA80 /* Message.swift in Sources */,
 				848E290A2AEC29180001E2DE /* ProfileView.swift in Sources */,
+				845A91B92AF39E760064C4C9 /* LikesView.swift in Sources */,
 				84B63ADC2AEA41D9000D31D4 /* AppStateManager.swift in Sources */,
+				845A91B52AF39BD50064C4C9 /* UserManager.swift in Sources */,
 				848616A82AEE3E8800C7EA80 /* MessagePreview.swift in Sources */,
+				845A91B72AF39C2E0064C4C9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
